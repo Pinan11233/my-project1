@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Light</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="main">
+    <header>
+        <a href="" class="logo">PINAN</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </header>
+    <div class="wrapper">
+        
+    <section>
+        <img src="stars.png" id="starts" alt="">
+        <img src="moon.png" id="moon" alt="">
+        <img src="mountains_behind.png" id="mountains_behind" alt="">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front" alt="">
+        
+    </section>
+    
+    <div class="sec" id="sec">
+        <h2>Tôi là BeTo</h2>
+        <p>
+            <br>” Một ngày nào đó bạn sẽ nhận ra ý nghĩa của ước mơ không phải ở chỗ nó có phù hợp với khả năng thực tế hay không. 
+                Điều quan trọng là nó cho phép bạn sống thêm một cuộc đời nữa với cảm xúc của riêng bạn, 
+                trong một thế giới mà bạn có thể hóa thân một cách hồn nhiên nhất vào đấng toàn năng. 
+                Như vậy ước mơ không chỉ là chiếc bàn là tinh thần giúp bạn ủi phẳng những nếp nhăn của số phận 
+                mà còn là cách để bạn bắt gặp hình ảnh của Thượng Đế trong bản thân mình.”</br>
+            <br>Đôi lúc ánh sáng giấc mơ trong chúng ta lại trở nên mờ nhạt đi chỉ vì tự tạo cho mình niềm tin rằng 
+                đó là điều quá khó để thành hiện thực hay tin những lời nói dèm pha xung quanh về nó. Nhưng với mình,
+                ước mơ không phải chỉ là một mục tiêu để mình hướng đến mà đầu tiên nó phải là điều thiêng liêng 
+                để mình nâng niu và luôn cảm thấy háo hức, hạnh phúc khi nghĩ đến như một ngọn mầm xanh chờ lớn.
+                Và ánh sáng giấc mơ cũng sẽ chỉ thật sự tỏa sáng khi bạn dũng cảm dám mơ.</br>
+            <br>Hay “Đôi khi bạn yêu mến một ai đó đơn giản chỉ vì người đó thật lòng yêu mến bạn. 
+                Tâm hồn chúng ta được sinh ra là để chờ đáp lại niềm yêu mến từ một tâm hồn khác. 
+                Nó giống như chiếc ống sáo, sẵn sàng reo lên khi ngọn gió mùa hè thổi qua.”</br>
+            <br>Hoá ra con người chúng ta đều giống nhau, hay nói về những điều phù phiếm, 
+                xa xôi hay làm những điều phúc tạp, phi thường nhưng rồi lại mủi lòng trước thứ tình cảm gọi là chân thành. 
+                Một niềm tin rằng ta đã yêu và được yêu là quá đủ.</br>
+        </p>
+        <p class="cre">Bản quyền thuộc về Online Tutorials</p>
+    </div>
+    <script>
+        let stars = document.getElementById('starts');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.0 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            header.style.top = value * 0.5 + 'px'
+        })
+    </script>
+    </div>
+</body>
+
+</html>
